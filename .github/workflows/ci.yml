@@ -20,6 +20,6 @@ jobs:
     - name: Build the Docker image
       run: docker build -t cicd-pipeline .
     - name: Tag the Docker image
-      run: docker tag cicd-pipeline var/cicd-pipeline:latest
+      run: docker tag cicd-pipeline housseinnd/cicd-pipeline:latest
     - name: Push to Dockerhub
-      run: docker push var/cicd-pipeline:latest
+      run: docker push housseinnd/cicd-pipeline:latest
