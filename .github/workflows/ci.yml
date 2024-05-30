@@ -21,7 +21,7 @@ jobs:
         password: ${{ secrets.DOCKER_PASSWORD }}
 
     - name: Build the Docker image
-      run: docker build -t var/cicd-pipeline2:latest .
+      run: docker build -t var/cicd-pipeline:latest .
 
     - name: Push to Docker Hub
-      run: docker push var/cicd-pipeline2:latest
+      run: docker push var/cicd-pipeline:latest
