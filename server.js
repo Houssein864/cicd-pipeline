@@ -7,6 +7,7 @@ app.get('/',(req,res)=>{
         status : 200,
         message:"hello world"
 
+        
     })
 
 })
